@@ -1,6 +1,6 @@
 % Función que aplica el método de Euler para resolver una ecuación
 % diferencial ordinaria a partir de un valor inicial dado.
-
+%
 % PRE-CONDICIONES
 % 'f': función expresada como cadena de caracteres (string)
 % (ej: si la EDO es y' = y + t^2, debe pasarse 'y + t^2');
@@ -8,7 +8,7 @@
 % 'b': extremo derecho del intervalo;
 % 'u0': condición inicial de la función;
 % 'h': tamaño del paso.
-
+%
 % POST-CONDICIONES
 % Se devuelve una matriz de dos columnas por N filas, siendo 
 % N = (b-a)/h. La primer columna alberga los pasos en los que fue
