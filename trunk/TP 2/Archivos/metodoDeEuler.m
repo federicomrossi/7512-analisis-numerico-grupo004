@@ -37,7 +37,7 @@ P = a:h:b;
 % Iteramos para aplicar el método.
 for j=1:N
     
-    U(j+1) = U(j)+ (h * feval(f,P(j),U(j)));
+    U(j+1) = U(j)+ (h * f(P(j),U(j)));
     
 end
 
