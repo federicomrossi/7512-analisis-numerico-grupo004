@@ -15,9 +15,13 @@ function tp2MetodoDeEuler()
     % Procesamos utilizando el método de Euler
     disp(' ');
     disp('Iniciando aplicación del Método de Euler.')
-    disp('Procesando...')
+    
+    disp(strcat('Procesando para el paso h=', num2str(h(1,1)), '...'));
     e1 = metodoDeEuler(funcion, a , b , U0 , h(1,1));
+    
+    disp(strcat('Procesando para el paso h=', num2str(h(1,2)), '...'));
     e2 = metodoDeEuler(funcion, a , b , U0 , h(1,2));
+    
     %e3 = metodoDeEuler(funcion, a , b , U0 , h(1,3));
     %e4 = metodoDeEuler(funcion, a , b , U0 , h(1,4));
     
