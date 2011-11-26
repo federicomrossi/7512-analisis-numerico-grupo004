@@ -26,7 +26,7 @@ N = (b-a)/h;
 
 % Creamos el vector U que contiene los resultados de cada paso,
 % insertando la condición inicial en el primer índice.
-U = zeros(1,N+1);
+U = zeros(1, N+1);
 U(1) = u0;
 
 % Creamos el vector auxiliar P que contiene los pasos en donde se
@@ -37,7 +37,7 @@ P = a:h:b;
 % Iteramos para aplicar el método.
 for j=1:N
     
-    U(j+1) = U(j)+ (h * f(P(j),U(j)));
+    U(j+1) = U(j)+ (h * f(P(j), U(j)));
     
 end
 
