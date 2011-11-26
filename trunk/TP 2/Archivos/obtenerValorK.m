@@ -1,5 +1,5 @@
 
-function matrizResultado = obtenerValorK(tiempos)
+function matrizResultado = obtenerValorK(intervalo)
     
     % Configuración
     % Utilizamos un formato que acepte mas cifras significativas
@@ -12,7 +12,7 @@ function matrizResultado = obtenerValorK(tiempos)
     
     % Interpolamos los puntos obtenemos los valores correspondientes a los
     % tiempos solicitados
-    matrizResultado = interpolacionDeLagrange(datosDeK(:,1)', datosDeK(:,2)', tiempos);
-    
+    % matrizResultado = interpolacionDeLagrange(datosDeK(:,1)', datosDeK(:,2)', tiempos);
+    matrizResultado = seleccionarDatos(datosDeK , intervalo);
 end
 
