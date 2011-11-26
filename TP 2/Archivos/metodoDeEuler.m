@@ -2,8 +2,9 @@
 % diferencial ordinaria a partir de un valor inicial dado.
 %
 % PRE-CONDICIONES
-% 'f': función expresada como cadena de caracteres (string)
-% (ej: si la EDO es y' = y + t^2, debe pasarse 'y + t^2');
+% 'f': función que se desea procesar, la cual debe pasada como una function 
+% handler (ej: @miFuncion). Esta debe tener dos parametros: una variable 
+% independiente y una variable dependiente de la primera.
 % 'a': extremo izquierdo del intervalo;
 % 'b': extremo derecho del intervalo;
 % 'u0': condición inicial de la función;
@@ -16,10 +17,6 @@
 % obtenido en cada paso.
 
 function matrizDeResultados = metodoDeEuler(f,a,b,u0,h)
-
-% Transformamos la cadena de caracteres que representa a la función
-% en una función entendible por MATLAB.
-f = inline(f);
 
 % Calculamos el número de intervalos N.
 N = (b-a)/h;
