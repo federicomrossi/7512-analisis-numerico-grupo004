@@ -18,7 +18,7 @@ function matrizResultante = interpolacionDeLagrange(X, Y, xi)
     % Declaración de variables y matrices auxiliares
     n = size(X,2);
     L = ones(n, size(xi, 2));
-
+    format longG;
     % Procesamos
     for i = 1:n
         for j = 1:n
