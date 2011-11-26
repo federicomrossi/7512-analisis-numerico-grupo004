@@ -5,7 +5,7 @@ function A = Principal()
 a = 0;
 b = 120;
 U0= 10^10;
-h = 4;
+h1 = 4;
 
 %p4 = obtenerValorK(pasos(1));
 %p2 = obtenerValorK(pasos(2));

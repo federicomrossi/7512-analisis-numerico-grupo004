@@ -15,14 +15,12 @@
 % N = (b-a)/h. La primer columna alberga los pasos en los que fue
 % aplicado el método y la segunda columna almacena el resultado
 % obtenido en cada paso.
-
 function matrizDeResultados = metodoDeEuler(f,a,b,u0,h)
 
 % Calculamos el número de intervalos N.
 N = (b-a)/h;
 
-% Creamos el vector U que contiene los resultados de cada paso,
-% insertando la condición inicial en el primer índice.
+% Creamos el vector U que contiene los resultados de cada paso
 U = zeros(1, N+1);
 U(1) = u0;
 
