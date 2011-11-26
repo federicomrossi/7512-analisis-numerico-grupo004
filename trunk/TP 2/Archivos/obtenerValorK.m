@@ -1,5 +1,5 @@
 
-function matrizResultado = obtenerValorK(intervalo)
+function matrizResultado = obtenerValorK(t)
     
     % Configuración
     % Utilizamos un formato que acepte mas cifras significativas
@@ -10,9 +10,9 @@ function matrizResultado = obtenerValorK(intervalo)
     % Abrimos el archivo y generamos una matriz con los datos extraidos
     datosDeK = load(strcat(directorio, archivo));
     
-    % Interpolamos los puntos obtenemos los valores correspondientes a los
-    % tiempos solicitados
-    % matrizResultado = interpolacionDeLagrange(datosDeK(:,1)', datosDeK(:,2)', tiempos);
-    matrizResultado = seleccionarDatos(datosDeK , intervalo);
+    % Buscamos el valor de K para el tiempo t dado
+    i = datosDeK == t;
+    matrizResultado = [t datosDeK(i,2)];
+   
 end
 
