@@ -28,11 +28,13 @@ function matrizResultante = seleccionarDatos(matriz, paso)
     n = 1 + intervalo;
     i = 1;  
     
-    while n < tamanoMatriz(1,1),
+    while n <= tamanoMatriz(1,1),
         i = i+1;
         matrizResultante(i,:) = matriz(n,:);
         n = n + intervalo;
     end  
     
     % Cortamos las filas de la matriz que no fueron utilizadas
-    matrizResultante((i+1) : tamanoMatriz(1,1) , :) = [];
+    if i+1 < tamanoMatriz(1,1),
+        matrizResultante((i+1) : tamanoMatriz(1,1) , :) = [];
+    end    
