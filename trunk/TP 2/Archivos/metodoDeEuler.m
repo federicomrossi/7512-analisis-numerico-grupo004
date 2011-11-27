@@ -17,26 +17,26 @@
 % obtenido en cada paso.
 function matrizDeResultados = metodoDeEuler(f,a,b,u0,h)
 
-% Calculamos el número de intervalos N.
-N = (b-a)/h;
+    % Calculamos el número de intervalos N.
+    N = (b-a)/h;
 
-% Creamos el vector U que contiene los resultados de cada paso
-U = zeros(1, N+1);
-U(1) = u0;
+    % Creamos el vector U que contiene los resultados de cada paso
+    U = zeros(1, N+1);
+    U(1) = u0;
 
-% Creamos el vector auxiliar P que contiene los pasos en donde se
-% aplicó el método.
-P = zeros(1, N+1);
-P = a:h:b;
+    % Creamos el vector auxiliar P que contiene los pasos en donde se
+    % aplicó el método.
+    P = zeros(1, N+1);
+    P = a:h:b;
 
-% Iteramos para aplicar el método.
-for j=1:N
-    
-    U(j+1) = U(j)+ (h * f(P(j), U(j)));
-    
-end
+    % Iteramos para aplicar el método.
+    for j=1:N
 
-% Creamos una matriz que esta formada por los vectores P y U 
-% traspuestos.
-matrizDeResultados = [P' U'];
+        U(j+1) = U(j)+ (h * f(P(j), U(j)));
+
+    end
+
+    % Creamos una matriz que esta formada por los vectores P y U 
+    % traspuestos.
+    matrizDeResultados = [P' U'];
 
