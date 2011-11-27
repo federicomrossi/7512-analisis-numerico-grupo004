@@ -7,7 +7,7 @@ function tp2MetodoDeEuler()
     a = 0;
     b = 120;
     U0= 10^10;
-    h = [4,2,1,0.5];
+    h = [4, 2, 1, 0.5];
 
     % Procesamos utilizando el método de Euler
     disp(' ');

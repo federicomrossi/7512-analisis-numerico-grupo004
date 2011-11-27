@@ -18,9 +18,11 @@ function matrizResultado = obtenerValorK(t)
             break;        
         end
     end
-
+    %[t posT]
+    
     if(posT == 0) 
-        MException('Función obtenerValorK: El valor t del intervalo no se encuentra en la tabla');
+        MException('AcctError:NoValue', ...
+                   'El valor t del intervalo no se encuentra en la tabla');
     end
     
     matrizResultado = [t datosDeK(posT,2)];
