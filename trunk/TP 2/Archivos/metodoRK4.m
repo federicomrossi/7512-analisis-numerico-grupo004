@@ -2,7 +2,9 @@
 % resolución de EDO's con un valor inicial.
 
 % PRECONDICIONES
-% 'f': Función expresada como una cadena de caracteres;
+% 'f': función que se desea procesar, la cual debe pasada como una function 
+% handler (ej: @miFuncion). Esta debe tener dos parametros: una variable 
+% independiente y una variable dependiente de la primera.
 % 'a': Extremos izquierdo del intervalo;
 % 'b': Extremos derecho del intervalo;
 % 'u0': Condición inicial de la función;
@@ -13,12 +15,7 @@
 % En la primera columna se guardan los instantes de tiempo en los cuales
 % fue aplicado el método, en la segunda columna, los resultados obtenidos
 % a cada instante
-
-function matrizDeResultados = RK4(f,a,b,u0,h)
-
-% La función pasada por parámetro como una cadena de caracteres
-% es convertida en una función con la cual Matlab pude operar
-f = inline(f);
+function matrizDeResultados = metodoRK4(f,a,b,u0,h)
 
 % Se calcula el número de intervalos 'M' dividiendo el largo total
 % del intervalo (a,b) por el tamaño del paso 'h'
@@ -39,12 +36,12 @@ U(1) = u0;
 for j=1:M
    
     % Calculamos los coeficientes necesarios para la utilización del método
-    q1=h*f(f,T(j),U(j));
-    q2=h*f(f,T(j)+h/2,U(j)+q1/2);
-    q3=h*f(f,T(j)+h/2,U(j)+q2/2);
-    q4=h*f(f,T(j)+h,U(j)+q3);
+    q1 = h * f(T(j),U(j));
+    q2 = h * f(T(j)+h/2,U(j)+q1/2);
+    q3 = h * f(T(j)+h/2,U(j)+q2/2);
+    q4 = h * f(T(j)+h,U(j)+q3);
     
-    U(j+1)=U(j)+(q1+2*q2+2*q3+q4)/6;
+    U(j+1) = U(j)+(q1+2*q2+2*q3+q4)/6;
     
 end
 
