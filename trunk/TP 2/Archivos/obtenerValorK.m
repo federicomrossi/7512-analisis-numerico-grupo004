@@ -1,3 +1,13 @@
+% Función que busca el valor de 'k' correspondiente a un tiempo t dado por
+% parametro. 
+%
+% PRE-CONDICIONES
+% t: es el tiempo en segundos.
+%
+% POST-CONDICIONES
+% Se devuelve una matriz de dimension 1x2, donde en la primer columna se
+% encuentra el valor t al cual corresponde el k(t) buscado, y en la segunda
+% columna se almacena este último.
 function matrizResultado = obtenerValorK(t)
     
     % Configuración
