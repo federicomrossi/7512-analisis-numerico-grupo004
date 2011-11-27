@@ -1,3 +1,11 @@
+% Función que utiliza el Método Runge-Kutta 4 y lo aplica a la función 
+% propuesta en el TP2.
+% 
+% POST-CONDICIONES
+% Se generan cuatro archivos con formato CSV, almacenandose en cada uno los 
+% valores obtenidos al aplicar el método para distintos pasos h. Estos
+% archivos se guardan en la carpeta 'CSV' que se debe encontrar en el mismo
+% directorio raíz que este archivo.
 function tp2MetodoRK4()
     
     format longG
@@ -28,10 +36,10 @@ function tp2MetodoRK4()
     % Generamos los archivos con formato CSV donde se albergan los
     % valores obtenidos para cada paso
     disp('Generando archivos CSV de datos...');
-    dlmwrite('tp2MetodoRK4ValoresPaso4.csv', rk1,'precision',16);
-    dlmwrite('tp2MetodoRK4ValoresPaso2.csv', rk2,'precision',16);
-    dlmwrite('tp2MetodoRK4ValoresPaso1.csv', rk3,'precision',16);
-    dlmwrite('tp2MetodoRK4ValoresPaso05.csv', rk4,'precision',16);
+    dlmwrite('CSV/tp2MetodoRK4ValoresPaso4.csv', rk1,'precision',16);
+    dlmwrite('CSV/tp2MetodoRK4ValoresPaso2.csv', rk2,'precision',16);
+    dlmwrite('CSV/tp2MetodoRK4ValoresPaso1.csv', rk3,'precision',16);
+    dlmwrite('CSV/tp2MetodoRK4ValoresPaso05.csv', rk4,'precision',16);
     
     disp('El proceso ha finalizado exitosamente.');
     disp(' ');

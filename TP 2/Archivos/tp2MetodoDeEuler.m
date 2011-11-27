@@ -1,3 +1,11 @@
+% Función que utiliza el Método de Euler y lo aplica a la función propuesta 
+% en el TP2.
+% 
+% POST-CONDICIONES
+% Se generan cuatro archivos con formato CSV, almacenandose en cada uno los 
+% valores obtenidos al aplicar el método para distintos pasos h. Estos
+% archivos se guardan en la carpeta 'CSV' que se debe encontrar en el mismo
+% directorio raíz que este archivo.
 function tp2MetodoDeEuler()
     
     format longG
@@ -28,10 +36,10 @@ function tp2MetodoDeEuler()
     % Generamos los archivos con formato CSV donde se albergan los
     % valores obtenidos para cada paso
     disp('Generando archivos CSV de datos...');
-    dlmwrite('tp2MetodoDeEulerValoresPaso4.csv', e1,'precision',16);
-    dlmwrite('tp2MetodoDeEulerValoresPaso2.csv', e2,'precision',16);
-    dlmwrite('tp2MetodoDeEulerValoresPaso1.csv', e3,'precision',16);
-    dlmwrite('tp2MetodoDeEulerValoresPaso05.csv', e4,'precision',16);
+    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso4.csv', e1,'precision',16);
+    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso2.csv', e2,'precision',16);
+    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso1.csv', e3,'precision',16);
+    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso05.csv', e4,'precision',16);
     disp('El proceso ha finalizado exitosamente.');
     disp(' ');
     
