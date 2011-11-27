@@ -1,6 +1,8 @@
 % Función que busca el valor de 'k' correspondiente a un tiempo t dado por
 % parametro. 
 %
+%       obtenerValorK(t)
+%
 % PRE-CONDICIONES
 % t: es el tiempo en segundos.
 %
