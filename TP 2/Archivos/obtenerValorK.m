@@ -12,7 +12,7 @@ function matrizResultado = obtenerValorK(t)
     lenDatosDeK = size(datosDeK);
     posT = 0;
     
-    for i = 1:(lenDatosDeK(1,1)+1)
+    for i = 1:(lenDatosDeK(1,1))
         if(isequal(datosDeK(i,1),t))
             posT = i;
             break;        
