@@ -1,8 +1,6 @@
-
 function matrizResultado = obtenerValorK(t)
     
     % Configuración
-    % Utilizamos un formato que acepte mas cifras significativas
     format longG;
     directorio = 'mediciones/';
     archivo = 'k.txt';

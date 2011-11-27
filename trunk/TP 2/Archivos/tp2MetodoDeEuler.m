@@ -28,10 +28,10 @@ function tp2MetodoDeEuler()
     % Generamos los archivos con formato CSV donde se albergan los
     % valores obtenidos para cada paso
     disp('Generando archivos CSV de datos...');
-    csvwrite('tp2MetodoDeEulerValoresPaso4.csv', e1);
-    csvwrite('tp2MetodoDeEulerValoresPaso2.csv', e2);
-    csvwrite('tp2MetodoDeEulerValoresPaso1.csv', e3);
-    csvwrite('tp2MetodoDeEulerValoresPaso05.csv', e4);
+    dlmwrite('tp2MetodoDeEulerValoresPaso4.csv', e1,'precision',16);
+    dlmwrite('tp2MetodoDeEulerValoresPaso2.csv', e2,'precision',16);
+    dlmwrite('tp2MetodoDeEulerValoresPaso1.csv', e3,'precision',16);
+    dlmwrite('tp2MetodoDeEulerValoresPaso05.csv', e4,'precision',16);
     disp('El proceso ha finalizado exitosamente.');
     disp(' ');
     
