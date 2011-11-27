@@ -1,6 +1,8 @@
 % Función que aplica el método de Euler para resolver una ecuación
 % diferencial ordinaria a partir de un valor inicial dado.
 %
+%       metodoDeEuler(f,a,b,u0,h)
+%
 % PRE-CONDICIONES
 % 'f': función que se desea procesar, la cual debe pasada como una function 
 % handler (ej: @miFuncion). Esta debe tener dos parametros: una variable 
