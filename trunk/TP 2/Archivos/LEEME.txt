@@ -36,7 +36,6 @@ ARCHIVOS
 
 - tp2MetodoDeRomberg.m: usa el metodo de Romberg para integrar y obtener N(t) durante el tiempo
 			que duró el problema, obteniendose asi la cantidad total de neutrones.
-- 
 
 
 Los demas archivos son utilizados por las funciones almacenadas en los archivos recien mencionados.
@@ -48,3 +47,7 @@ RESULTADOS
 Los resultados de los metodos de Euler y Runge-Kutta 4 se almacenan en archivos con formato CSV en la
 CSV. Estos archivos son procesados por otros dos archivos de Microsoft Excel ubicados en la misma
 carpeta.
+
+
+
+
