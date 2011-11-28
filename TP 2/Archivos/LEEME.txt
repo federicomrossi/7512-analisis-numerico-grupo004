@@ -27,7 +27,8 @@ siguiente sentencia:
 (ej: >> help tp2MetodoDeEuler)
 
 
-ARCHIVOS:
+ARCHIVOS
+=================================
 
 - tp2MetodoDeEuler.m: usa el método de Euler para para hallar la solución numérica de N(t).
 
@@ -39,3 +40,11 @@ ARCHIVOS:
 
 
 Los demas archivos son utilizados por las funciones almacenadas en los archivos recien mencionados.
+
+
+RESULTADOS
+=================================
+
+Los resultados de los metodos de Euler y Runge-Kutta 4 se almacenan en archivos con formato CSV en la
+CSV. Estos archivos son procesados por otros dos archivos de Microsoft Excel ubicados en la misma
+carpeta.
