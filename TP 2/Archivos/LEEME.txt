@@ -1,15 +1,15 @@
-FACULTAD DE INGENIERÍA | UNIVERSIDAD DE BUENOS AIRES
-
-75.12 Analisis Numerico I
-Trabajo Práctico N°2
-
-Grupo: 004
-Integrates:
-
-- Di Nella, Camilla
-- Bertucci, Juan Pablo
-- Montoya, Diego Ramiro
-- Rossi, Federico Martín
+| FACULTAD DE INGENIERÍA | UNIVERSIDAD DE BUENOS AIRES
+|
+| 75.12 Analisis Numerico I
+| Trabajo Práctico N°2
+|
+| Grupo: 004
+| Integrates:
+|
+|  - Di Nella, Camilla
+|  - Bertucci, Juan Pablo
+|  - Montoya, Diego Ramiro
+|  - Rossi, Federico Martín
 
 
 
