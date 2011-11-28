@@ -9,7 +9,7 @@
 function tp2MetodoDeEuler()
     
     format longG
-    
+   
     % Especificaciones
     funcion = @tp2Ecuacion;
     a = 0;
