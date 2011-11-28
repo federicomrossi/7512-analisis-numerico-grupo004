@@ -21,23 +21,7 @@ function matrizResultado = obtenerValorK(t)
     datosDeK = load(strcat(directorio, archivo));
     
     % Buscamos el valor de K para el tiempo t dado
-    %lenDatosDeK = size(datosDeK);
-    posT = 0;
-    
-    %for i = 1:(lenDatosDeK(1,1))
-    %    if(isequal(datosDeK(i,1),t))
-    %        posT = i;
-    %        break;        
-    %    end
-    %end
-    %[t posT]
-    
-    posT = find(datosDeK(:,1)==t);
-    
-    if(posT == 0) 
-        MException('AcctError:NoValue', ...
-                   'El valor t del intervalo no se encuentra en la tabla');
-    end
+    posT = find(datosDeK(:,1) == t);
     
     matrizResultado = [t datosDeK(posT,2)];
    
