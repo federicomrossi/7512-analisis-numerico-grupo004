@@ -1,0 +1,41 @@
+FACULTAD DE INGENIERÍA | UNIVERSIDAD DE BUENOS AIRES
+
+75.12 Analisis Numerico I
+Trabajo Práctico N°2
+
+Grupo: 004
+Integrates:
+
+- Di Nella, Camilla
+- Bertucci, Juan Pablo
+- Montoya, Diego Ramiro
+- Rossi, Federico Martín
+
+
+
+FORMA DE USO
+=================================
+
+Cada item de los objetivos solicitados en el enunciado del Trabajo Práctico N°2 fue
+implementado archivos .m de matlab separados para una mejor organización. A continuación
+se detallan los archivos centrales que son los encargados de procesar cada item. De todas
+formas, recuerde que puede accederse a la documentación de cada archivo ejecutando la
+siguiente sentencia:
+
+	>> help funcion
+
+(ej: >> help tp2MetodoDeEuler)
+
+
+ARCHIVOS:
+
+- tp2MetodoDeEuler.m: usa el método de Euler para para hallar la solución numérica de N(t).
+
+- tp2MetodoRK4.m: usa el metodo de Runge-Kutta 4 para hallar la solución numérica de N(t).
+
+- tp2MetodoDeRomberg.m: usa el metodo de Romberg para integrar y obtener N(t) durante el tiempo
+			que duró el problema, obteniendose asi la cantidad total de neutrones.
+- 
+
+
+Los demas archivos son utilizados por las funciones almacenadas en los archivos recien mencionados.
