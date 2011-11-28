@@ -16,6 +16,10 @@ function tp2MetodoRK4()
     b = 120;
     U0= 10^10;
     h = [4, 2, 1, 0.5];
+    
+    % Convertimos el archivo de datos empiricos k.txt en un archivo de formato 
+    % CSV
+    convertirTXTaCSV();
 
     % Procesamos utilizando el método de RK4
     disp(' ');

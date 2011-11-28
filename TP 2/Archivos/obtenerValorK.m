@@ -15,10 +15,10 @@ function matrizResultado = obtenerValorK(t)
     % Configuración
     format longG;
     directorio = 'mediciones/';
-    archivo = 'k.txt';
+    archivo = 'k.csv';
     
     % Abrimos el archivo y generamos una matriz con los datos extraidos
-    datosDeK = load(strcat(directorio, archivo));
+    datosDeK = dlmread(strcat(directorio, archivo),',');
     
     % Buscamos el valor de K para el tiempo t dado
     posT = find(datosDeK(:,1) == t);
