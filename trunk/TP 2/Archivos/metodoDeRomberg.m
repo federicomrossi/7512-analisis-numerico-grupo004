@@ -40,7 +40,7 @@ function resultado = metodoDeRomberg(f, a, b, K)
     for k = 2:K
         for j =2:k
             
-            R(k,j) = R(k,j-1) + (R(k,j-1) - R(k-1,j-1)) / ((4^(j-1)) - 1);
+           R(k,j) = R(k,j-1) + (R(k,j-1) - R(k-1,j-1)) / ((4^(j-1)) - 1);
             
         end       
     end

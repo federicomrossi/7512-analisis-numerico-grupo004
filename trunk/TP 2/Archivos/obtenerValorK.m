@@ -21,16 +21,18 @@ function matrizResultado = obtenerValorK(t)
     datosDeK = load(strcat(directorio, archivo));
     
     % Buscamos el valor de K para el tiempo t dado
-    lenDatosDeK = size(datosDeK);
+    %lenDatosDeK = size(datosDeK);
     posT = 0;
     
-    for i = 1:(lenDatosDeK(1,1))
-        if(isequal(datosDeK(i,1),t))
-            posT = i;
-            break;        
-        end
-    end
+    %for i = 1:(lenDatosDeK(1,1))
+    %    if(isequal(datosDeK(i,1),t))
+    %        posT = i;
+    %        break;        
+    %    end
+    %end
     %[t posT]
+    
+    posT = find(datosDeK(:,1)==t);
     
     if(posT == 0) 
         MException('AcctError:NoValue', ...
