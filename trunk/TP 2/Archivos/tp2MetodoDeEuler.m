@@ -16,7 +16,11 @@ function tp2MetodoDeEuler()
     b = 120;
     U0= 10^10;
     h = [4, 2, 1, 0.5];
-
+    
+    % Convertimos el archivo de datos empiricos k.txt en un archivo de formato 
+    % CSV
+    convertirTXTaCSV();
+    
     % Procesamos utilizando el método de Euler
     disp(' ');
     disp('Iniciando aplicación del Método de Euler.')
@@ -36,10 +40,10 @@ function tp2MetodoDeEuler()
     % Generamos los archivos con formato CSV donde se albergan los
     % valores obtenidos para cada paso
     disp('Generando archivos CSV de datos...');
-    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso4.csv', e1,'precision',16);
-    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso2.csv', e2,'precision',16);
-    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso1.csv', e3,'precision',16);
-    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso05.csv', e4,'precision',16);
+    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso4.csv', e1, 'precision', 16);
+    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso2.csv', e2, 'precision', 16);
+    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso1.csv', e3, 'precision', 16);
+    dlmwrite('CSV/tp2MetodoDeEulerValoresPaso05.csv', e4, 'precision', 16);
     disp('El proceso ha finalizado exitosamente.');
     disp(' ');
     
