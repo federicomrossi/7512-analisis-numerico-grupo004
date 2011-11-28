@@ -6,7 +6,7 @@
 | Grupo: 004
 | Integrates:
 |
-|  - Di Nella, Camilla
+|  - Di Nella, Camila
 |  - Bertucci, Juan Pablo
 |  - Montoya, Diego Ramiro
 |  - Rossi, Federico Martín
