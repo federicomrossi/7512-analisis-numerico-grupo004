@@ -21,7 +21,7 @@ function matrizResultado = obtenerValorK(t)
     datosDeK = dlmread(strcat(directorio, archivo),',');
     
     % Buscamos el valor de K para el tiempo t dado
-    posT = find(datosDeK(:,1) == t);
+    posT = datosDeK(:,1) == t;
     
     matrizResultado = [t datosDeK(posT,2)];
    
